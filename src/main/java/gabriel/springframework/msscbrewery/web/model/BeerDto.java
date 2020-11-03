@@ -8,6 +8,7 @@ import org.hibernate.validator.constraints.NotBlank;
 
 import javax.validation.constraints.Null;
 
+import java.time.OffsetDateTime;
 import java.util.UUID;
 
 @Data
@@ -27,4 +28,8 @@ public class BeerDto {
 
     @NotBlank
     private Long upc;
+
+    private OffsetDateTime createdDate;
+
+    private OffsetDateTime lastUpdatedDate;
 }
